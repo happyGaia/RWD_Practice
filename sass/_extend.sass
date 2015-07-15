@@ -1,0 +1,26 @@
+%content_menu
+	font-size: $content_menu_fz
+	line-height: 22px
+	color: $content_menu_c
+	padding: 10px 20px
+	display: block
+	&:hover
+		text-decoration: underline
+		color: $main_color1
+
+%r_menu_b_li
+	text-align: center
+	border-right: 1px solid $content_border_col
+
+%exceed_width_eclipse
+	white-space: nowrap
+	text-overflow: ellipsis
+	overflow: hidden
+
+%clearfix
+	&:after
+		content: "."
+		height: 0
+		display: block
+		visibility: hidden
+		clear: both	

@@ -1,0 +1,613 @@
+*
+	+box-sizing(border-box)
+	text-decoration: none
+
+.clearfix	
+	&:after
+		content: "."
+		height: 0
+		display: block
+		visibility: hidden
+		clear: both
+
+// .exceed_width_eclipse
+// 	white-space: nowrap
+// 	text-overflow: ellipsis
+// 	overflow: hidden
+
+.apear
+	display: inline-block
+
+.disappear
+	display: none
+
+body
+	background-color: $main_color2_body
+	font-family: "Helvetica Neue","Microsoft Jhenghei","Helvetica,Arial,Geneva,sans-serif"
+	letter-spacing: 0.06em
+
+body, ul, li, h1, h2, h3, h4, h5, h6
+	list-style-type: none
+	margin: 0
+	border: 0
+	padding: 0
+
+.header
+	background-color: #fff
+	border-top: $main_color1 2px solid
+	border-bottom: $line_color_header 1px solid
+	width: 100%
+	// height: 28px
+
+.header, .subtitle, .content
+	margin-bottom: $row_space
+
+.phoneOnly
+	display: none
+
+.phoneOnlyMenu
+	display: block 
+
+.container
+	margin: 0 auto
+	width: $pc_width
+	@extend %clearfix
+	position: relative  //for header right bottom 0
+
+.subtitle
+	.header_logo
+		@extend %clearfix
+		width: 25%
+	img
+		// float: left
+		margin-right: 8px
+		padding-top: 6px
+	.pbox7
+		+fakeImg(75px, 61px, white)
+		margin-right: 8px
+		padding-top: 6px
+	.site
+		line-height: 1.4em
+		// padding-top: 10px
+		// float: left
+		position: absolute
+		bottom: $header_site_and_right_bootom
+		left: 80px
+		.desc2
+			color: $more_c
+			font-size: 12px
+		.name
+			color: $h_font_c
+			font-size: 24px
+	.submenu, .header_logo, .site, img, .r_search, .write_r
+		float: left
+
+	.header_right
+		float: right
+		width: 75%
+		text-align: right
+		position: absolute
+		bottom: $header_site_and_right_bootom
+		right: 0
+	// .submenu, .r_search, .write_r
+	// 	text-align: right
+
+.submenu
+	height: 30px
+	line-height: 28px
+	width: $submenu
+	padding-left: 15px
+	padding-right: 15px
+	border-bottom: 1px solid #ccc
+	margin-right: $range
+	li
+		text-align: right
+		display: inline-block
+		a
+			color: #5c4544
+			font-size: 13px
+			&:hover
+				color: #ac8c85
+				text-decoration: underline
+		&:before
+			+icon("")
+			color: #ac8c85
+			width: 9px
+		&:last-child
+			margin-right: -15px
+	li+li
+		margin-left: 5px
+
+.r_search
+	width: $r_search
+	font-size: 13px
+	background-color: #fff
+	border: 1px solid $content_border_col
+	height: 30px
+	input
+		background-color: transparent
+		border: none
+		padding: 6px 28px 6px 12px
+		width: 100%
+		position: relative
+		z-index: 1
+	button
+		margin-right: 4px
+		position: relative
+		z-index: 2
+		top: -22px
+		background-color: transparent
+		border: none
+		&:before
+			+icon("\f002")
+			color: $content_r_box_c
+
+.write_r
+	width: $w_recipe
+	margin-left: $range
+	border: 1px solid $w_btn_border_c
+	background-color: $w_btn_bgc
+	@include border-radius(4px)
+	a
+		padding: 5px 12px
+		font-size: 14px
+		height: 30px
+		display: inline-block
+		line-height: 20px
+		color: $w_btn_c
+		&:before
+			+icon("")
+			color: $w_btn_c
+		&:hover
+			color: $w_btn_hc
+			&:before
+				color: $w_btn_hc
+
+.content
+	.left
+		width: ($pc_width/3)*2		
+		//margin-right: $col_space
+		float: left
+	.right
+		width: ($pc_width/3)-$col_space
+		float: right
+		// &after
+	.ad
+		height: 6em
+		display: block
+
+.col
+	width: 100%
+	background-color: #FFF
+	height: auto	
+	margin-bottom: 	$row_space
+	border: 1px solid $content_border_col
+	@extend %clearfix
+
+.r_menu_b
+	width: 20%
+	float: left
+	.all
+		@extend %r_menu_b_li
+		border-top: 1px solid $content_border_col
+		a
+			@extend %content_menu
+			
+
+.r_menu
+	width: 100%
+	li 
+		@extend %r_menu_b_li
+		a
+			@extend %content_menu
+	// .all
+	// 	border-top: 1px solid $content_border_col
+	.important
+		background-color: $main_color1
+		a
+			color: #fff
+			&:hover
+				color: #fff
+		margin-bottom: 5px
+.r_boxs
+	width: 79%
+.r_boxs2
+	width: $box2_width
+	padding-top: 15px
+	padding-bottom: 15px
+.r_boxs .r_b_content
+	width: 32%
+	margin-right: 7px
+	img
+		margin-bottom: 15px
+.r_boxs2 .r_b_content
+	width: $content_width 
+	margin-right: ($box2_width -($content_width * $field_number))/($field_number - 1)
+	margin-bottom: 15px
+	&:nth-child(5)
+		margin-right: 0
+	img
+		margin-bottom: 10px
+	.name2
+		font-size: 14px
+		color: $h_font_c
+		height: 2.8em
+		overflow: hidden
+		line-height: 20px
+		// @extend %exceed_width_eclipse
+.r_boxs	.r_line
+	border-top: 5px solid $content_border_col
+	margin-top: -5px
+	padding: 15px 0 30px
+// .r_boxs2 .r_line
+// 	padding-top: 15px
+.r_boxs .r_b_title
+	font-size: 18px
+.r_boxs2 .r_b_title
+	padding-bottom: 15px
+	border-bottom: 1px solid $h_font_c
+	font-size: 16px
+.r_boxs, .r_boxs2
+	float: left	
+	.r_box
+		width: 92%
+		margin: 0 auto
+		@extend %clearfix
+		.tabs
+			width: 100%
+			@extend %clearfix
+			li
+				float: left
+				cursor: pointer
+				@extend %content_menu
+				color: $content_r_box_c
+				&:hover
+					border-bottom: 5px solid $main_color1
+					position: relative
+					z-index: 2
+					text-decoration: none
+					// transition: all 0.3s ease-in-out
+					// -webkit-transition: all 0.3s ease-in-out
+					// -moz-transition: all 0.3s ease-in-out
+					// -o-transition: all 0.3s ease-in-out
+			.checked
+				color: $main_color1
+				border-bottom: 5px solid $main_color1
+				position: relative
+				z-index: 2
+		.infoBox
+			border-top: 5px solid $content_border_col
+			position: relative
+			top: -5px
+			z-index: 1
+			padding: 15px 0
+			@extend %clearfix
+			.photo
+				width: 50%
+				float: left
+				img
+					width: 100%
+					max-width: 100%
+				.pbox
+					+fakeImg(100%, 200px, $main_color2_body)
+			.intro
+				width: 47.4%
+				float: right
+				li
+					width: 100%
+					padding-bottom: 12px
+					margin-bottom: 12px
+					line-height: 18px
+					border-bottom: 1px solid $content_border_col
+					color: $content_r_box_c
+					@extend %exceed_width_eclipse
+					&:last-child
+						border-bottom: none
+		.r_b_title
+			span
+				float: right
+				color: $content_r_box_c
+				font-size: 14px
+				line-height: 22px
+				&:after
+					margin-left: 4px
+					color: $icon1
+					+icon("")
+				&:hover
+					color: $more_c
+		.r_b_title
+			margin-bottom: 15px
+
+.desc
+	width: 100%
+	.name
+		font-size: 16px
+	.hot
+		font-size: 12px
+		color: #999
+		.love
+			&:before
+				+icon("")
+		.view
+			&:before
+				+icon("")
+		.camera
+			&:before
+				+icon("")
+		.love, .view, .camera
+			margin-right: 4px
+			width: 12px
+	.name, .hot
+		margin-bottom: 10px
+	.author
+		font-size: 14px
+		line-height: 20px
+		color: $by
+		.black
+			color: $name
+	.material
+		font-size: 14px
+		line-height: 20px
+		color: $material
+
+
+//right common
+.content .right .col_r
+	padding: 20px 11px 15px
+	margin-bottom: 10px
+	.title
+		padding-bottom: 10px
+		color: $main_color1
+		font-size: 16px
+		border-bottom: 1px solid $main_color1
+	.list
+		padding: 15px 0
+		border-bottom: 1px solid $main_color2_body
+		@extend %clearfix
+		&:last-child
+			border-bottom: none
+			padding-bottom: 0
+
+//brane kicten
+.list
+	.c1
+		margin-right: $list_c1_mr
+		float: left
+		+fakeImg($list_c1_width, 66px, $main_color2_body)
+		img
+			max-width: 100%
+	.c2
+		float: left
+		width: $list_c2_width
+		img
+			float: left
+			width: 20%
+			margin-right: 5.9%
+			max-height: 100%
+			// background-color: $main_color2_body
+		.pbox4
+			+fakeImg(20%, 34px, $main_color2_body)
+			float: left
+			margin-right: 5.9%
+
+		div
+			width: 74%
+			@extend %exceed_width_eclipse
+			&.store
+				line-height: 34px
+			&:last-child
+				width: 100%
+				margin-top: 5.9%	
+
+.r_b_content
+	float: left
+	&:last-child
+		margin-right: 0
+	img
+		width: 100%
+		max-width: 100%
+	.pbox2
+		+fakeImg(100%, 113px, $main_color2_body)
+		margin-bottom: 15px
+	.pbox3
+		+fakeImg(100%, 107px, $main_color2_body)
+		margin-bottom: 10px
+//newest key words
+.col3
+	counter-reset: orderlist 0
+	.list
+		counter-increment: orderlist 1	
+		&:before
+			content: counter(orderlist)
+			float: left
+			line-height: 55px
+		.c3
+			width: $list_c1_width
+			margin-right: $list_c1_mr
+			float: left	
+			line-height: 55px	
+		.c4
+			width: $list_c4_width
+			float: right
+			img
+				max-width: $list_c4_photo_width
+				width: $list_c4_photo_width
+				height: $list_c4_photo_height
+				background-color: $main_color2_body
+			.pbox5
+				+fakeImg($list_c4_photo_width, 55px, $main_color2_body)
+				margin-right: 4%
+				float: left
+
+.nav, .nav_r
+	li
+		float: left
+		color: $h_font_c
+		font-size: $h_font_s
+		padding: 4px 12px 4px 0
+		line-height: 20px
+		&:hover
+			color: lighten($h_font_c,20%)
+			cursor: pointer
+
+.nav
+	float: left
+
+.nav_r
+	float: right
+	margin-right: 0
+	li
+		padding: 4px 0 4px 12px
+
+.home:after
+	content: "|"
+	margin-left: 12px
+
+//footer
+.footer
+	padding: 40px 0
+	background-color: #FFF
+	border-bottom: $main_color1 2px solid
+	border-top: $line_color_header 1px solid
+	.f_left
+		width: $f_left_width
+		float: left	
+	.f_right
+		width: $f_right_width
+		float: right
+
+.f_left
+	.f_left_box
+		width: 178px
+		margin: 0 auto
+
+
+.f_left_box
+	.logo
+		// background-image: url()
+		margin: 0 auto 20px
+		width: 132px
+		height: 40px
+		display: block
+		background-repeat: no-repeat
+		background-color: $main_color2_body
+		&:hover
+			// background-image: url()
+			background-color: darken($main_color2_body, 10%)
+	.btn
+		display: block
+		background-color: #FFF
+		border: 1px solid $btn_q_r_color
+		color: $btn_q_r_color
+		text-align: center
+		@include border-radius(4px)
+		padding: 13px 30px
+		font-size: 16px
+		letter-spacing: 0
+		min-width: 178px
+		&:hover
+			color: white
+			background-color: $btn_q_r_color
+			transition: background-color 0.2s ease-in
+
+
+.btn span
+	margin-left: 5px
+
+.f_left_box>span
+	color: $copyright
+	font-size: 13px
+	width: 100%
+	letter-spacing: 0.056em
+	margin: 5px auto 0
+	display: inline-block
+	text-align: center
+
+.f_right
+	.f_r
+		// width: $f_right_col_width /3
+
+		float: left
+		margin-right: 23px
+		h4
+			font-size: 16px
+			color: $f_title_color
+			margin-bottom: 24px
+			font-weight: 500
+			span
+				font-size: 12px
+				color: $by
+				font-weight: normal
+				margin-bottom: 2px
+				display: block
+		.item
+			// margin-right: 20px
+			li
+				margin-bottom: 10px
+				line-height: 1em
+				a
+					font-size: 14px
+					color: $content_r_box_c
+					&:hover
+						text-decoration: underline
+						color: $f_item_color
+				&:last-child
+					margin-bottom: 0
+					margin-right: 0
+		.item+.item
+			margin-left: 20px
+
+		.item1
+			float: left
+		.item2
+			float: right
+		.item3
+			float: left
+		
+
+.item3
+	li
+		width: 26px
+		height: 26px
+		text-align: center
+		float: left
+		@include border-radius(50%)
+	li+li
+		margin-left: 10px
+
+.ficon
+	font-size: 18px
+	line-height: 26px
+
+.fb
+	border: 1px solid #3b5998
+	.ficon
+		color: #3b5998
+		&:hover
+			color: white
+	&:hover
+		background-color: #3b5998
+		
+
+.tw
+	border: 1px solid #55acee
+	.ficon
+		color: #55acee
+		&:hover
+			color: white
+	&:hover
+		background-color: #55acee
+
+.ig
+	border: 1px solid #3f729b
+	.ficon
+		color: #3f729b
+		&:hover
+			color: white
+	&:hover
+		background-color: #3f729b
+
+
+
+		
+

@@ -1,0 +1,24 @@
+@mixin icon($content)
+	display: inline-block
+	content: $content
+	font-family: FontAwesome
+	height: 14px
+	width: 14px
+	margin-right: 2px
+
+@mixin pad_not_show
+	display: none
+
+@mixin phone_not_show
+	display: none
+
+@mixin exceed_width_eclipse
+	white-space: nowrap
+	text-overflow: ellipsis
+	overflow: hidden
+
+@mixin fakeImg($f_w, $f_h, $f_bgc)
+	width: $f_w
+	max-width: 100%
+	background-color: $f_bgc
+	height: $f_h

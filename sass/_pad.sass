@@ -1,0 +1,130 @@
+.container
+	width: $pad_width
+
+.r_menu_b, .r_boxs, .content .ad, #brand, #news_key
+	border: 1px solid $content_border_col
+
+.col
+	border: none
+
+//disappear area in pad
+#ad2, .magazine, #r1, #col5, #f_r1, #f_r2, #f_r3, #f_r4 h4, #f_l1 .logo, #f_l1 .copyright
+	+pad_not_show()
+
+.content
+	.left, .right
+		width: 100%
+		float: none
+	.r_menu_b
+		width: 100%
+		float: none
+		margin-bottom: 15px
+	.r_menu_b, .r_box
+		background-color: #FFF
+		.all
+			border-right: none
+	#col1
+		background-color: transparent
+
+.r_menu
+	height: 8.5em
+	overflow: hidden
+	li
+		&:not(.important)
+			border-right: none
+			width: 100%/$menu_pad_col
+			float: left
+		// &:last-child
+		// 	@extend %clearfix			
+				
+.r_boxs
+	width: 100%
+	background-color: white
+	padding: 15px 15px 0 15px
+	.r_box
+		width: 100%
+	.r_line
+		padding: 15px 0 5px
+
+.r_boxs 
+	.r_b_content
+		width: 100%
+		@extend %clearfix
+		img, .pbox2
+			width: 25%
+			float: left
+			margin-right: 1.5%
+		
+.desc
+	.author
+		+pad_not_show()
+	.material
+		display: block
+
+.list 
+	.c1
+		height: 80px
+		width: 15%
+	.c2
+		width: 80%
+		img
+			width: 8%
+			margin-right: 2%
+		div:last-child
+			margin-top: 3%
+		.pbox4
+			width: 8%
+			margin-right: 2%
+	.c4
+		+pad_not_show()
+
+.col3 .list
+	.c3, &:before
+		line-height: normal
+
+
+.r_b_content + .r_b_content
+	border-top: 1px solid $content_border_col
+	padding-top: 15px
+					
+.subtitle 
+	.submenu
+		width: $pad_submenu
+	.r_search
+		width: $pad_r_search
+	.write_r
+		width: $pad_w_recipe
+		text-align: center
+
+.submenu
+	li
+		+pad_not_show()
+
+.footer
+	position: relative
+	margin-top: 120px
+	.f_left
+		width: 100%
+	.f_right 
+		width: 100%
+		.f_r
+			float: none
+			margin-right: auto
+
+//f_left
+#f_l1
+	.btn
+		position: absolute
+		top: -110px
+
+//f_right
+#f_r4
+	width: 100%
+	text-align: center
+	.item3
+		display: inline-block
+		float: none
+
+.phoneOnlyMenu
+	display: block
+	

@@ -1,0 +1,20 @@
+@import 'compass/css3'
+@import 'setting'
+@import 'extend'
+@import 'mixin'
+@import 'common'
+
+$pad-max: 991px
+
+$phone-max: 768px
+
+$phone-max-s-400: 400px
+
+@media screen and (max-width: $pad-max)
+	@import 'pad'
+
+@media screen and (max-width: $phone-max)
+	@import 'phone'
+
+@media screen and (max-width: $phone-max-s-400)
+	@import 'phone_s_400'
