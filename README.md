@@ -48,21 +48,23 @@
 ## 實際畫面
 
 * PC (991px以上)
-![PC](https://github.com/happyGaia/RWD_Practice/raw/master/snapshot/rwd1.png)
+   
+  ![PC](https://github.com/happyGaia/RWD_Practice/raw/master/snapshot/rwd1.png)
+
 
 * pad (991px以下)
 
-<img src="https://github.com/happyGaia/RWD_Practice/raw/master/snapshot/rwd2.png" width="500px" alt="pad: 991px以下" title="pad: 991px以下">
+  <img src="https://github.com/happyGaia/RWD_Practice/raw/master/snapshot/rwd2.png" width="500px" alt="pad: 991px以下" title="pad: 991px以下">
 
 
 * phone-big (768px以下)
-
-<img src="https://github.com/happyGaia/RWD_Practice/raw/master/snapshot/rwd3.png" width="400px" alt="phone-big: 768px以下" title="phone-big: 768px以下">
+   
+  <img src="https://github.com/happyGaia/RWD_Practice/raw/master/snapshot/rwd3.png" width="400px" alt="phone-big: 768px以下" title="phone-big: 768px以下">
 
 
 * phone-small (400px以下)
-
-<img src="https://github.com/happyGaia/RWD_Practice/raw/master/snapshot/rwd4.png" width="300px" alt="phone-small: 400px以下" title="phone-small: 400px以下">  
-<img src="https://github.com/happyGaia/RWD_Practice/raw/master/snapshot/rwd41.png" width="300px" alt="phone-small: 400px以下: 選單展開" title="phone-small: 400px以下: 選單展開">
+   
+  <img src="https://github.com/happyGaia/RWD_Practice/raw/master/snapshot/rwd4.png" width="300px" alt="phone-small: 400px以下" title="phone-small: 400px以下">
+  <img src="https://github.com/happyGaia/RWD_Practice/raw/master/snapshot/rwd41.png" width="300px" alt="phone-small: 400px以下: 選單展開" title="phone-small: 400px以下: 選單展開">
 
 ## 參考連結
