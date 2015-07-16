@@ -7,9 +7,11 @@
 
   有關RWD設定請看all.sass。
    * phone-small: 400px以下 ( _phone_s_400.sass )
+   
       在試chrome測試 iphone 4和 google nexus 4，發現約在400px下，因此設定。
 
    * phone-big: 768px以下 ( _phone.sass )
+   
       在看模仿的網站時，發現他大約在這範圍menu會到極限，並縮成下拉式選單。
 
    * pad: 991px以下 ( _pad.sass )
