@@ -47,6 +47,7 @@
    
 ## 實際畫面
 
-![image](https://github.com/happyGaia/RWD_Practice/raw/master/shapshot/rwd1.png)
+
+![PC](http://raw.github.com/happyGaia/RWD_Practice/master/shapshot/rwd1.png)
 
 ## 參考連結
