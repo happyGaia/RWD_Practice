@@ -51,7 +51,15 @@
    
 
    * 有關sass、css學到的應用
-   
+      * css select: + 和 > 
+      * text-overflow
+      * sass clearfix extend實際應用，之前都是直接在html上加
+      * sass mixin實際應用
+      * RWD
+      * counter-reset、counter-increment、content: counter() =>效果顯示在topic5，或看all.css裡的.col3 .list:before
+      * Font Awesome使用
+
+
 ## 實際畫面
 
 * PC (991px以上)
@@ -73,5 +81,3 @@
    
   <img src="https://github.com/happyGaia/RWD_Practice/raw/master/snapshot/rwd4.png" width="300px" alt="phone-small: 400px以下" title="phone-small: 400px以下">
   <img src="https://github.com/happyGaia/RWD_Practice/raw/master/snapshot/rwd41.png" width="300px" alt="phone-small: 400px以下: 選單展開" title="phone-small: 400px以下: 選單展開">
-
-## 參考連結
